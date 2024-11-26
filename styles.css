@@ -46,9 +46,31 @@ body {
   color: #fff;
   font-weight: bold;
 }
+/* Make the carousel occupy the full screen */
+#carouselExampleCaptions {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove any margin */
+  overflow: hidden; /* Ensure no overflow issues */
+}
+
+/* Ensure the images fully cover the carousel */
+#carouselExampleCaptions .carousel-item img {
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 100%; /* Stretch to full width */
+  height: 100vh; /* Match the height of the viewport */
+}
+
+/* Optional: Style the carousel captions */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 1rem;
+  border-radius: 5px;
+}
+
 .hero {
   background: url('hero-bg.jpg') no-repeat center center/cover;
-  color: #fff;
+  color: #050505;
   text-align: center;
   padding: 50px 20px;
 }
