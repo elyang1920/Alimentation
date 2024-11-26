@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  /* Header */
+  .header {
+    background: #333;
+    color: #f3eded;
+    padding: 20px 0;
+  }
+  
+  .header .logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  /* Logo Styling */
+.logo img {
+  max-height: 100px; /* Adjust based on your logo size */
+  width: auto;      /* Maintain aspect ratio */
+  vertical-align: middle;
+  color: #f9f9f9;
+  margin-right: 20px; /* Space between logo and navigation */
+}
+
+/* Adjust Container Layout */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin: 0 15px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-menu ul li {
+    margin-right: 20px;
+  }
+  
+  .nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #0a0a0a;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .services .service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .services .card {
+    max-width: 300px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .services .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+ /* Make the carousel occupy the full screen */
+#carouselExampleCaptions {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove any margin */
+  overflow: hidden; /* Ensure no overflow issues */
+}
+
+/* Ensure the images fully cover the carousel */
+#carouselExampleCaptions .carousel-item img {
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 100%; /* Stretch to full width */
+  height: 100vh; /* Match the height of the viewport */
+}
+
+/* Optional: Style the carousel captions */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+  
