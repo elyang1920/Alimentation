@@ -113,3 +113,26 @@ body {
   text-align: center;
   padding: 10px 0;
 }
+
+p {
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h2 {
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.team {
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
