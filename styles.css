@@ -138,9 +138,10 @@ h2 {
 }
 .images {
   border-radius: 8px;
-  text-align: justify;
+  text-align: center;
   padding: 20px;
-  margin: 0 auto;
-  max-width: 800px;
+  margin: 0;
+  max-width: 200px;
   float: none;
+  max-height: 200px;
 }
