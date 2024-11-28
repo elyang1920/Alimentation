@@ -136,3 +136,11 @@ h2 {
   margin: 0 auto;
   max-width: 800px;
 }
+.images {
+  border-radius: 8px;
+  text-align: justify;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  float: none;
+}
