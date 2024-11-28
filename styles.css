@@ -5,10 +5,10 @@ body {
   padding: 0;
 }
 .logo img {
-  max-height: 50px; 
+  max-height: 100px; 
   width: auto;      
   vertical-align: middle;
-  margin-right: 20px; 
+  margin-right: 0px; 
 }
 
 
@@ -111,7 +111,7 @@ body {
   background: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  
 }
 
 p {
@@ -135,4 +135,110 @@ h2 {
   padding: 20px;
   margin: 0 auto;
   max-width: 800px;
+}
+.images {
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  max-width: 200px;
+  float: none;
+  max-height: 200px;
+}
+
+
+
+
+
+
+
+footer {
+  background-color: #5e2ea5;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-signup {
+  flex: 1;
+  text-align: center;
+  background-color: white;
+  color: #5e2ea5;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  min-width: 200px;
+}
+
+.footer-signup p {
+  margin-bottom: 1rem;
+}
+
+.btn-signup {
+  background-color: #5e2ea5;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid white;
+  padding-top: 1rem;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-bottom ul li {
+  display: inline;
+}
+
+.footer-bottom ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-bottom ul li a:hover {
+  text-decoration: underline;
 }
