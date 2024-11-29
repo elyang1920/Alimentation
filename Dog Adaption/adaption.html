@@ -106,6 +106,80 @@ body {
 .below .card {
     flex: 1 1 300px; /* Make cards responsive and evenly distributed */
 }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.modal-header, .modal-footer {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Success message */
+#successMessage {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
 </style>
 
     
@@ -117,6 +191,7 @@ body {
             </div>
             <nav class="nav-menu">
                 <ul>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#team">Our Team</a></li>
@@ -148,6 +223,37 @@ body {
             <p>Our team of experts and experienced animal advocates are here to guide you every step of the way and help you find the perfect canine companion for your home. Whether you’re looking for a playful puppy or a laid-back senior dog, there’s a wide variety of adoptable dogs out there, each with its unique charm, and we’re here to assist you throughout the process.</p>
             <p>Read our articles today and open your heart to the possibilities of finding your perfect canine companion!</p>
         </div>
+        <button id="openModalBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Enter Your Details</h2>
+        </div>
+        <div class="modal-body">
+            <form id="userForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button id="submitBtn" type="submit">Submit</button>
+        </div>
+    </div>
+</div>
+
+<!-- Success Message -->
+<div id="successMessage" style="display:none;"></div>
+<script src="script.js"></script>
 
         <div class="applet-flex-container">
             <!-- Card 1 -->
@@ -178,7 +284,7 @@ body {
 <footer>
     <div class="footer-container">
         <div class="footer-column">
-            <img src="logo.png" alt="Petfinder logo">
+            <img src="./pics/logo.png" alt="Petfinder logo" >
             <p>Powered by Purina</p>
         </div>
   
@@ -191,7 +297,6 @@ body {
                 <li><a href="#">News Center</a></li>
                 <li><a href="#">Put Petfinder On Your Site</a></li>
                 <li><a href="#">For Developers</a></li>
-                <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
   
@@ -208,19 +313,23 @@ body {
         <div class="footer-column">
             <h4>ABOUT DOGS & PUPPIES</h4>
             <ul>
-                <li><a href="#">All About Dogs & Puppies</a></li>
-                <li><a href="#">Dog Adoption</a></li>
-                <li><a href="#">Dog Breeds</a></li>
-                <li><a href="#">Feeding Your Dog</a></li>
-                <li><a href="#">Dog Behavior</a></li>
-                <li><a href="#">Dog Health & Wellness</a></li>
-                <li><a href="#">Dog Training</a></li>
-                <li><a href="#">Other Dog Information</a></li>
+                <li><a href="./Dog Adaption/adaption.html">Dog Adoption</a></li>
+                <li><a href="./Dog Breed/breed.html">Dog Breeds</a></li>
+               
             </ul>
         </div>
   
+        <div class="footer-column">
+          <h4>CONTACT OR MESSAGE</h4>
+          <ul>
+              <li><a href="#">Tel no. : 0953-379-2633 </a></li>
+              <li><a href="#">Email:20231686@nbsc.edu.ph</a></li>
+              
+          </ul>
+      </div>
+  
         <div class="footer-signup">
-            <p>To get the latest on pet adoption and pet care, sign up for the Petfinder newsletter.</p>
+            <p>To get the latest on pet adoption and pet care, sign up for the Alimentation newsletter.</p>
             <a href="#" class="btn-signup">SIGN UP</a>
         </div>
     </div>
@@ -228,8 +337,8 @@ body {
     <div class="footer-bottom">
         <ul>
             <li><a href="#">Shelter & Rescue Registration</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="./about us/index.html">Sitemap</a></li>
+            <li><a href="./terms and services/services.html">Terms of Service</a></li>
             <li><a href="#">Notice at Collection</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Accessibility</a></li>
